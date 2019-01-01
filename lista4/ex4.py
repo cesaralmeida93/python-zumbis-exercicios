@@ -18,7 +18,7 @@ while k < len(texto):
 palavras = texto2.split(' ')
 prefixos = ["P","p","Y","y","T","t","H","h","O","o","N","n"]
 for x in palavras:
-    if x.startswith(tuple(prefixos)) and x.endswith(tuple(prefixos)):
+    if x.startswith(tuple(prefixos)) or x.endswith(tuple(prefixos)):
         resultado.append(x)
 
 print(resultado) 
