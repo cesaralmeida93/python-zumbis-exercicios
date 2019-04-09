@@ -1,0 +1,16 @@
+def enconde(msg):
+    s = ''
+    for c in msg:
+         s += chr(ord(c) + 30000)
+    return s
+
+def mostra(msg):
+    s = ''
+    for c in msg: 
+        s += chr(ord(c) - 30000)
+    return s
+
+msg = input()
+
+print(enconde(msg))
+print(mostra(enconde(msg)))
